@@ -49,7 +49,7 @@
         margin-left: -5px;
         width: 100%;
         transition: transform 1s linear;
-        background-color: #fff;
+     
       }
       .lead {
         font-weight: 650;
@@ -531,6 +531,11 @@
                 var container = document.querySelector('.container');
                 if (container) {
                     container.style.backgroundColor = 'black';
+                }
+                var spin =document.querySelector('.img-2');
+                if(spin)
+                {
+                  spin.style.backgroundColor='black';
                 }
                 var timer_class = document.querySelector('.inline-block');
                 if (timer_class) {
