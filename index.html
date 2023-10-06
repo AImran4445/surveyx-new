@@ -29,6 +29,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;
       }
       h1 {
         margin-top: 10px;
@@ -521,7 +522,7 @@
             changeBackgroundColor();
             displayParameterValues();
         };
-      </script>
+        </script>
           <!-- subheading -->
           <br /><p class="lead">
             <span class="b1"><script>document.write(getURLParameter('b1'))</script></span>
@@ -561,15 +562,15 @@
             Valid on: <span id="date"></span>
           </p>
         </div>
+       </div>
       </div>
-    </div>
     <script>
       function getURLParameter(name) {
           return decodeURIComponent(
               (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
           );
       }
-  </script>
+    </script>
     <script>
       $("#btn-claim").on("click", function () {
         console.log("clicked");
@@ -632,6 +633,6 @@
       document.getElementById("date").innerHTML =
       months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
     </script>
-	<script src="../lpixf.js"></script>
+  	<script src="../lpixf.js"></script>
   </body>
 </html>
